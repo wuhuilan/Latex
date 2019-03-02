@@ -1,0 +1,69 @@
+% 导言区
+\documentclass[12pt]{article}
+
+\usepackage{ctex}
+
+\newcommand{\myfont}{\textit{\textbf{\textsf{WuHuiLan}}}}
+
+
+% 正文区(文稿区)
+\begin{document}
+	%字体族设置（罗马字体、无衬线字体、打字机字体）设置命令
+	%\textrm{Roman Family}  \textsf{Sans Serif Family}  
+	%\texttt{Typewriter Family}
+	
+	%字体申明，用大括号限定字体申明的范围
+	\rmfamily Roman Family {\sffamily Sans Serif Family}
+	{\ttfamily Typewriter Family}
+	
+	\textsf{ As we drove off from Columbia, I wanted to write a letter to you to tell you all that is on my mind.}
+	
+	\sffamily As we drove off from Columbia, I wanted to write a letter to you to tell you all that is on my mind.
+	
+	{\rmfamily First, I want to tell you how proud we are. Getting into Columbia is a real testament of what a great well-rounded student you are. Your academic, artistic, and social skills have truly blossomed in the last few years. Whether it is getting the highest grade in Calculus, completing your elegant fashion design, successfully selling your painted running shoes, or becoming one of the top orators in Model United Nations, you have become a talented and accomplished young woman. You should be as proud of yourself as we are.}
+	
+	
+	%字体系列设置（粗细，宽度）
+	\textmd{Medium Series}  \textbf{Boldface Series}
+	
+	{\mdseries Medium Series} {\bfseries Boldface Series}
+	
+	
+	%字体形状（直立、斜体、伪斜体、小型大写）
+	\textup{Upright Shape} \textit{Italic Shape}
+	\textsl{Slanted Shape} \textsc{Small Caps Shape}
+	
+	{\upshape  Upright  Shape}  {\itshape Italic Shape}
+	{\slshape Slanted Shape}   {\scshape Samll Caps Shape}
+	
+	
+	%中文字体
+	{\songti 宋体}  
+	\quad{\heiti 黑体}
+	\quad{\fangsong 仿宋}  
+	\quad{\kaishu 楷书}
+	
+	中文字体的\textbf{粗体}与\textit{斜体}
+	
+	%字体大小 ——字体申明
+	%
+	{\tiny         hello}\\
+	{\scriptsize   hello}\\
+	{\footnotesize hello}\\
+	{\small		   hello}\\
+	%由此值作为参考值，需要在documentclass中设置，一般只有10,11,12pt（磅）
+	{\normalsize   hello}\\
+	{\large		   hello}\\
+	{\Large	       hello}\\
+	{\LARGE        hello}\\  
+	{\huge         hello}\\
+	{\Huge         hello}\\
+	
+	%中文字号设置命令 具体字号可以在cmd中输入
+	%建议自己定义新命令，如导言区中的新命令
+	\zihao{-0} 伍慧兰！
+	
+	
+	\myfont
+	
+\end{document}                                                                                                                                                                                                                                                                                                                                                                                                                                                                  

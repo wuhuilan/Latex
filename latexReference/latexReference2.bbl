@@ -1,0 +1,29 @@
+\begin{thebibliography}{1}
+
+\bibitem{abramowitz1972handbook}
+Milton Abramowitz, Irene~A Stegun, et~al.
+\newblock {\em Handbook of mathematical functions: with formulas, graphs, and
+  mathematical tables}, volume~55.
+\newblock Dover publications New York, 1972.
+
+\bibitem{adams1993title}
+Peter Adams.
+\newblock The title of the work.
+\newblock {\em The name of the journal}, 4(2):201--213, 1993.
+
+\bibitem{_latex_2012}
+勇 王, 萍 姚, 岚 王, and 立 庞.
+\newblock {LaTeX与方正书版排版数学论文探讨}.
+\newblock {\em 中国科技期刊研究}, (06 vo 23):1036--1039, 2012.
+
+\bibitem{_latexword_2014}
+加佳 马.
+\newblock {LaTeX与Word文件的相互转换}.
+\newblock {\em 中国科技期刊研究}, (03 vo 25):378--382, 2014.
+
+\bibitem{_latex_2015}
+静 龙, 婵妤 尚, and 云志 孙.
+\newblock {定制科技期刊LaTeX论文模板的思路和实践}.
+\newblock {\em 中国科技期刊研究}, (09 vo 26):975--980, 2015.
+
+\end{thebibliography}

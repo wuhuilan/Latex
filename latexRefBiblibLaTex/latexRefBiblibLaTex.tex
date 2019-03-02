@@ -1,0 +1,29 @@
+%导言区
+\documentclass{ctexart}
+
+%biblatex/biber
+%新的TEX参考文献排版引擎
+%样式文件（参考文献样式文件--bbx文件，引用样式文件--cbx）使用LATEX编写
+%支持根据本地化排版，如：
+%		biber -1 zh_pinyin texfile,用于指定按拼音排序
+%		biber -1 zh_stroke texfile，用于按笔画排序
+
+%引入biberlatex宏包，指定样式为numeric,后端程序为biber
+%sorting = centy c:中文，e:英文，n:作者姓名，t:文献标题 y:出版年份
+\usepackage[style=caspervector,backend=biber,utf8,sorting = centy]{biblatex}
+%添加参考文献数据库
+\addbibresource{ref.bib}
+
+%正文区
+\begin{document}
+	%一次管理，多次应用
+	无格式化引用\cite{adams1993title}
+	
+	带方括号的引用\parencite{abramowitz1972handbook}
+	
+	上标引用\supercite{_latex_2015}
+	
+	\nocite{*}
+	\printbibliography[title={参考文献}]  %输出参考文献列表，title修改参考文献的标题
+	
+\end{document}

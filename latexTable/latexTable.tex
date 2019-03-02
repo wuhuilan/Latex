@@ -1,0 +1,29 @@
+%导言区
+\documentclass{ctexart}
+
+%\usepackage{ctex}
+%正文区
+%产生表格的语法格式以及需要注意的事项
+%\begin{tabular}[<垂直对齐方式>]{<列格式说明>}
+%	<表项> & <表项> & ……& <表项> & <表项> &\\
+%…
+%\end{tabular}
+%
+%注意：每列需要用\\换行
+%用&表示不同的列
+%l-列左对齐,c-列居中对齐，r-列右对齐，p{<宽>}-列宽固定，能够自动换行
+
+\begin{document}
+	\LaTeX{}中的表格：
+	\begin{tabular}{|l|| c| c| c| p{2cm}|} %指定列排版格式-左对齐，居中，右对齐
+	\hline
+	性别 & 语文 & 数学 & 英语 & 备注\\
+	\hline \hline
+	张三 & 87 & 78 & 87& 优秀\\
+	\hline
+	李四 & 45 & 56 & 72 & 补考，另行通知\\
+	\hline
+	王五 & 99 & 56 & 35 & 偏科\\
+	\hline
+	\end{tabular}
+\end{document}

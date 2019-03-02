@@ -1,0 +1,58 @@
+%导言区
+\documentclass{ctexbook}%ctexbook,ctexrep,ctexart
+
+%\usepackage{ctex}
+
+%=============设置标题的格式===============
+\ctexset{  %在article形式下无法运行
+	section = {
+	%format+用于在已有章节的名字格式后面附加内容raggedright：左对齐
+		format+ =\zihao{-4} \heiti \raggedright, 
+		name = {,、},
+		number = \chinese{section},
+		%beforeskip 选项用于设置章节标题前的垂直间距 章与章之间的距离
+		%afterskip 选项控制章节标题与后面下方之间的距离
+		beforeskip = 8.0ex plus 0.2ex minus .2ex,
+		afterskip = 1.0ex plus 0.2ex minus .2ex,
+		aftername = \hspace{0pt} 
+		%aftername将被插入到章节编号与其后的标题内容之间，用于控制格式变
+		%换。常用于控制章节编号与标题内容之间的距离，或者控制标题是否另起一行。
+	},
+	subsection = {
+		format+ =\zihao{-5} \heiti \raggedright,
+		name = {,、},
+		number = \arabic{subsection},
+		beforeskip = 1.0ex plus 0.2ex minus .2ex,
+		afterskip = 1.0ex plus 0.2ex minus .2ex,
+		aftername = \hspace{0pt}
+	}
+}
+
+%正文区(文稿区)
+\begin{document}
+	\tableofcontents %产生目录
+
+	\chapter{绪论}  %用chapter开辟章节
+	\section{研究的目的和意义}
+	\section{国内外研究现状}
+	\subsection{国外研究现状}
+	\subsection{国内研究现状}
+	\section{研究内容}
+	\section{研究方法与技术路线}
+	\subsubsection{研究内容}
+	\subsection{技术路线}
+	
+	 \chapter{实验与结果分析}  %用chapter开辟章节
+	 \section{引言}
+   	 \section{实验方法}
+   	 \section{实验结果}
+	 \subsection{数据}
+	 \subsection{图表}
+	 \subsubsection{实验条件}
+	 \subsubsection{实验过程}
+	 \subsection{结果分析}
+	 \section{结论}
+	 \section{感谢}
+	 	
+	 	 
+\end{document}

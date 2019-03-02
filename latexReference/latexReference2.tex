@@ -1,0 +1,18 @@
+%导言区
+\documentclass{ctexart}
+
+\bibliographystyle{plain} %可以修改排版格式
+
+
+%正文区
+%一次管理，多次使用——制作文献库
+%@BOOK{huilan2004, ……}:一本书籍，引用标志为huilan2004
+\begin{document}
+	这是对一个参考文献的引用：\cite{adams1993title}
+	这是对一个参考文献的引用：\cite{abramowitz1972handbook}
+	这是对一个参考文献的引用：\cite{_latex_2015}
+
+	\nocite{*} %显示文件中所有参考文献
+	\bibliography{ref,ref2}
+	
+\end{document}
